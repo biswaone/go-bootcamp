@@ -18,6 +18,7 @@ const (
 	F Grade = "F"
 )
 
+// TODO: Implement stringer method for student type
 type student struct {
 	firstName, lastName, university                string
 	test1Score, test2Score, test3Score, test4Score int
@@ -141,3 +142,5 @@ func findTopperPerUniversity(gs []studentStat) map[string]studentStat {
 
 	return toppers
 }
+
+//TODO: find all the toppers having same marks
